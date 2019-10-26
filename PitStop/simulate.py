@@ -35,13 +35,14 @@ YELLOWRECT = pygame.Rect(XMARGIN, YMARGIN, BUTTONSIZE, BUTTONSIZE)
 BLUERECT   = pygame.Rect(XMARGIN + BUTTONSIZE + BUTTONGAPSIZE, YMARGIN, BUTTONSIZE, BUTTONSIZE)
 REDRECT    = pygame.Rect(XMARGIN, YMARGIN + BUTTONSIZE + BUTTONGAPSIZE, BUTTONSIZE, BUTTONSIZE)
 GREENRECT  = pygame.Rect(XMARGIN + BUTTONSIZE + BUTTONGAPSIZE, YMARGIN + BUTTONSIZE + BUTTONGAPSIZE, BUTTONSIZE, BUTTONSIZE)
+
+
 class simulate:
 
-    score = 0
+    #score = 0
 
-    def __init__(self):
+    def __init__(self, score):
         global FPSCLOCK, DISPLAYSURF, BASICFONT, BEEP1, BEEP2, BEEP3, BEEP4
-
 
         pygame.init()
         FPSCLOCK = pygame.time.Clock()
@@ -72,7 +73,7 @@ class simulate:
             DISPLAYSURF.fill(bgColor)
             self.drawButtons()
 
-            scoreSurf = BASICFONT.render('Score: ' + str(self.score), 1, WHITE)
+            scoreSurf = BASICFONT.render('Score: ' + str(score[0]), 1, WHITE)
             scoreRect = scoreSurf.get_rect()
             scoreRect.topleft = (WINDOWWIDTH - 100, 10)
             DISPLAYSURF.blit(scoreSurf, scoreRect)
@@ -116,7 +117,7 @@ class simulate:
                     if currentStep == len(pattern):
                         # pushed the last button in the pattern
                         self.changeBackgroundAnimation()
-                        self.score += 1
+                        score[0] += 1
                         waitingForInput = False
                         currentStep = 0 # reset back to first step
 
@@ -130,7 +131,12 @@ class simulate:
                     #score = 0
                     #pygame.time.wait(1000)
                     self.changeBackgroundAnimation()
+                    print("pre terminate ", score[0])
+                    tempScore = score[0]
+                    score.append(tempScore)
+                    score.pop(0)
                     self.terminate()
+                    return
             pygame.display.update()
             FPSCLOCK.tick(FPS)
 

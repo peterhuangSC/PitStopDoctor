@@ -1,5 +1,8 @@
+# GUI, this is the driver 
+
 import tkinter as tk
 import simulate
+
 root = tk.Tk()
 logo = tk.PhotoImage(file="pictures/docbutton.gif")
 run = tk.PhotoImage(file="pictures/runButton.gif")
@@ -26,9 +29,16 @@ def onclick(args):
     if args == 3:
         exit()
     print(doctorid)
+
 def getdoctor():
-    score = simulate.simulate().score
-    print(score)
+    scoreMatrix = [0]
+    
+    #print(currentScore)
+    simulate.simulate(scoreMatrix) ##.score
+    
+    score = scoreMatrix.pop()
+    print("The final score is ", score)
+
 root.mainloop()
 
 
