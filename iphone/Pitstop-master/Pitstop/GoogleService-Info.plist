@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>787482051164-g1fkal7j1o79nk7clmtmb2gf2cb109s0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.787482051164-g1fkal7j1o79nk7clmtmb2gf2cb109s0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAObzwgTLBImysQjFKIgcYkocLaoO9eLf8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>787482051164</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bankerbradapps.pitstop</string>
+	<key>PROJECT_ID</key>
+	<string>pitstop-ddf27</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pitstop-ddf27.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:787482051164:ios:3e1192cba78fb6001d1c99</string>
+	<key>DATABASE_URL</key>
+	<string>https://pitstop-ddf27.firebaseio.com</string>
+</dict>
+</plist>
