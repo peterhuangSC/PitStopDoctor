@@ -10,7 +10,6 @@ import Firebase
 
 class RegisterViewController: UIViewController {
 
-    
     //Pre-linked IBOutlets
 
     @IBOutlet var emailTextfield: UITextField!
@@ -26,7 +25,6 @@ class RegisterViewController: UIViewController {
     }
     
 
-  
     @IBAction func registerPressed(_ sender: AnyObject) {
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) {
             (user, error) in
@@ -37,8 +35,6 @@ class RegisterViewController: UIViewController {
                 self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
-
-        
         
     } 
     

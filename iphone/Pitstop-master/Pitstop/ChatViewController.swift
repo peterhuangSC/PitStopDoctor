@@ -9,11 +9,7 @@ import UIKit
 import Firebase
 
 class ChatViewController: UIViewController {
-    
-    // Declare instance variables here
 
-    
-    // We've pre-linked the IBOutlets
     @IBOutlet var heightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var BeginPitstop: UIButton!
@@ -40,17 +36,12 @@ class ChatViewController: UIViewController {
     
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
-        
-        //TODO: Log out the user and send them back to WelcomeViewController
         do {
             try Auth.auth().signOut()
             navigationController?.popToRootViewController(animated: true)
         } catch {
             print("Error, there was a problem signing out")
         }
-        
     }
     
-
-
 }
