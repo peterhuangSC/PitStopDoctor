@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CommandLineKit",
+        "repositoryURL": "https://github.com/pvieito/CommandLineKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "706b076155a41e0ef21be9060a8775f5ed381682",
+          "version": null
+        }
+      },
+      {
+        "package": "LoggerKit",
+        "repositoryURL": "https://github.com/pvieito/LoggerKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "3ba9151c87d9ead08188e9e3d789b5c6b987ddad",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

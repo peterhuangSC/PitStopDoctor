@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 //import PythonKit
 
-class ChatViewController: UIViewController {
+class PrePitstopViewController: UIViewController {
 
     @IBOutlet var heightConstraint: NSLayoutConstraint!
     
@@ -24,12 +24,7 @@ class ChatViewController: UIViewController {
         let pkA = PythonTesterA.init()
         pkA.loadSimpleFn()
         //pkA.numpyTest()
-        
-        //TODO: Set yourself as the delegate and datasource here:
-        //TODO: Set yourself as the delegate of the text field here:
-        //TODO: Set the tapGesture here:
-        //TODO: Register your MessageCell.xib file here:
-
+        //pkA.tester2()
     }
     
     @IBAction func beginPressed(_ sender: UIButton) {
