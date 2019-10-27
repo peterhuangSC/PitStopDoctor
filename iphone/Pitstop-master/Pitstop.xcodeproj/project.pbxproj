@@ -13,6 +13,7 @@
 		16C41F202365826000FA8491 /* Python.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F1F2365826000FA8491 /* Python.swift */; };
 		16C41F222365826800FA8491 /* PythonLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F212365826800FA8491 /* PythonLibrary.swift */; };
 		16C41F242365826E00FA8491 /* PythonLibrary+Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F232365826E00FA8491 /* PythonLibrary+Symbols.swift */; };
+		16C41F262365844400FA8491 /* PythonTesterA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F252365844400FA8491 /* PythonTesterA.swift */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
 		6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */; };
 		6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9DE1B94EBE70053D2E7 /* MessageCell.xib */; };
@@ -33,6 +34,7 @@
 		16C41F1F2365826000FA8491 /* Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Python.swift; path = "../../PythonKit-master/PythonKit/Python.swift"; sourceTree = "<group>"; };
 		16C41F212365826800FA8491 /* PythonLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PythonLibrary.swift; path = "../../PythonKit-master/PythonKit/PythonLibrary.swift"; sourceTree = "<group>"; };
 		16C41F232365826E00FA8491 /* PythonLibrary+Symbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PythonLibrary+Symbols.swift"; path = "../../PythonKit-master/PythonKit/PythonLibrary+Symbols.swift"; sourceTree = "<group>"; };
+		16C41F252365844400FA8491 /* PythonTesterA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonTesterA.swift; sourceTree = "<group>"; };
 		34B47533FB698BEA18FCE18C /* Pods-Pitstop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitstop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pitstop/Pods-Pitstop.release.xcconfig"; sourceTree = "<group>"; };
 		6321A9B61B94EBA10053D2E7 /* Pitstop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitstop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				63E28B241B9A335300FBF6E0 /* Message.swift */,
+				16C41F252365844400FA8491 /* PythonTesterA.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				63E28B251B9A335300FBF6E0 /* Message.swift in Sources */,
 				6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */,
 				63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */,
+				16C41F262365844400FA8491 /* PythonTesterA.swift in Sources */,
 				16C41F202365826000FA8491 /* Python.swift in Sources */,
 				16C41F222365826800FA8491 /* PythonLibrary.swift in Sources */,
 				16C41F242365826E00FA8491 /* PythonLibrary+Symbols.swift in Sources */,

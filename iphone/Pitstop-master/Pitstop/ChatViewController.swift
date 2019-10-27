@@ -21,6 +21,10 @@ class ChatViewController: UIViewController {
         
         BeginPitstop.layer.cornerRadius = 10
         
+        let pkA = PythonTesterA.init()
+        pkA.loadSimpleFn()
+        //pkA.numpyTest()
+        
         //TODO: Set yourself as the delegate and datasource here:
         //TODO: Set yourself as the delegate of the text field here:
         //TODO: Set the tapGesture here:
