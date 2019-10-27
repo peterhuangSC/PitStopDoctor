@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  PitStop
 //
-//  Created by Angela Yu on 29/08/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
+//  Created by Peter Huang on 26/10/2019.
 //
 
 import UIKit
@@ -26,11 +25,8 @@ class ChatViewController: UIViewController {
         BeginPitstop.layer.cornerRadius = 10
         
         //TODO: Set yourself as the delegate and datasource here:
-        
         //TODO: Set yourself as the delegate of the text field here:
-
         //TODO: Set the tapGesture here:
-        
         //TODO: Register your MessageCell.xib file here:
 
     }
