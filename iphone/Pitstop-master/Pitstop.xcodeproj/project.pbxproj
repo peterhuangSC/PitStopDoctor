@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0D202CD20154BF6753344580 /* Pods_Pitstop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980E4BEEFB478DF8657F138F /* Pods_Pitstop.framework */; };
 		164B0A7023650F9B001642A0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 164B0A6F23650F9B001642A0 /* GoogleService-Info.plist */; };
+		16C41F1E2365825A00FA8491 /* NumpyConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F1D2365825A00FA8491 /* NumpyConversion.swift */; };
+		16C41F202365826000FA8491 /* Python.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F1F2365826000FA8491 /* Python.swift */; };
+		16C41F222365826800FA8491 /* PythonLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F212365826800FA8491 /* PythonLibrary.swift */; };
+		16C41F242365826E00FA8491 /* PythonLibrary+Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C41F232365826E00FA8491 /* PythonLibrary+Symbols.swift */; };
 		6321A9C31B94EBA10053D2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9C21B94EBA10053D2E7 /* Images.xcassets */; };
 		6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321A9DB1B94EBE70053D2E7 /* CustomMessageCell.swift */; };
 		6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6321A9DE1B94EBE70053D2E7 /* MessageCell.xib */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		164B0A6F23650F9B001642A0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		16C41F1D2365825A00FA8491 /* NumpyConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumpyConversion.swift; path = "../../PythonKit-master/PythonKit/NumpyConversion.swift"; sourceTree = "<group>"; };
+		16C41F1F2365826000FA8491 /* Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Python.swift; path = "../../PythonKit-master/PythonKit/Python.swift"; sourceTree = "<group>"; };
+		16C41F212365826800FA8491 /* PythonLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PythonLibrary.swift; path = "../../PythonKit-master/PythonKit/PythonLibrary.swift"; sourceTree = "<group>"; };
+		16C41F232365826E00FA8491 /* PythonLibrary+Symbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PythonLibrary+Symbols.swift"; path = "../../PythonKit-master/PythonKit/PythonLibrary+Symbols.swift"; sourceTree = "<group>"; };
 		34B47533FB698BEA18FCE18C /* Pods-Pitstop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitstop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pitstop/Pods-Pitstop.release.xcconfig"; sourceTree = "<group>"; };
 		6321A9B61B94EBA10053D2E7 /* Pitstop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitstop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6321A9BA1B94EBA10053D2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C41F1A236580C800FA8491 /* Python Kit */ = {
+			isa = PBXGroup;
+			children = (
+				16C41F1D2365825A00FA8491 /* NumpyConversion.swift */,
+				16C41F212365826800FA8491 /* PythonLibrary.swift */,
+				16C41F1F2365826000FA8491 /* Python.swift */,
+				16C41F232365826E00FA8491 /* PythonLibrary+Symbols.swift */,
+			);
+			name = "Python Kit";
+			sourceTree = "<group>";
+		};
 		6321A9AD1B94EBA10053D2E7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +97,7 @@
 		6321A9B81B94EBA10053D2E7 /* Pitstop */ = {
 			isa = PBXGroup;
 			children = (
+				16C41F1A236580C800FA8491 /* Python Kit */,
 				6321A9EE1B94EC360053D2E7 /* Model */,
 				6321A9EB1B94EC170053D2E7 /* View */,
 				6321A9EA1B94EC0A0053D2E7 /* Controller */,
@@ -291,9 +311,13 @@
 				63E28B251B9A335300FBF6E0 /* Message.swift in Sources */,
 				6321A9E21B94EBE70053D2E7 /* CustomMessageCell.swift in Sources */,
 				63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */,
+				16C41F202365826000FA8491 /* Python.swift in Sources */,
+				16C41F222365826800FA8491 /* PythonLibrary.swift in Sources */,
+				16C41F242365826E00FA8491 /* PythonLibrary+Symbols.swift in Sources */,
 				63E28B311B9A337600FBF6E0 /* LogInViewController.swift in Sources */,
 				63E28B2F1B9A337600FBF6E0 /* AppDelegate.swift in Sources */,
 				63E28B301B9A337600FBF6E0 /* ChatViewController.swift in Sources */,
+				16C41F1E2365825A00FA8491 /* NumpyConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
