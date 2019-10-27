@@ -13,6 +13,7 @@ class LogInViewController: UIViewController {
     //Textfields pre-linked with IBOutlets
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passwordTextfield: UITextField!
+    //make sure you output error message 6 letters at least
     
     override func viewDidLoad() {
         super.viewDidLoad()
