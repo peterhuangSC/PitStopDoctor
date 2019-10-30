@@ -35,13 +35,14 @@ public struct PythonLibrary {
   private let isLegacyPython: Bool
 
   private init() {
-    guard let pythonLibraryHandle = PythonLibrary.loadPythonLibrary() else {
+    self.pythonLibraryHandle = PythonLibrary.loadPythonLibrary(at: "/usr/bin")!
+    /*guard let pythonLibraryHandle = PythonLibrary.loadPythonLibrary() else {
       fatalError("""
         Python library not found. Set the \(Environment.library.key) \
         environment variable with the path to a Python library.
         """)
     }
-    self.pythonLibraryHandle = pythonLibraryHandle
+    self.pythonLibraryHandle = pythonLibraryHandle*/
 
     // Check if Python is legacy (Python 2)
     isLegacyPython = PythonLibrary.loadSymbol(

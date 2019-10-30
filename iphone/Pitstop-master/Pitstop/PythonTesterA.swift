@@ -8,6 +8,7 @@
 
 import Foundation
 import PythonKit
+//import Python
 
 class PythonTesterA {
     func loadSimpleFn() {

@@ -13,6 +13,7 @@ class WelcomeViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //let backgroundNavy = UIColor(red: 36, green: 61, blue: 86, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
